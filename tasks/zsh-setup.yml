@@ -4,8 +4,8 @@
   tags:
     - install
 
-- name: Change shell to zsh
-  shell: chsh -s $(which zsh)
+- name: Change shell to zsh for {{ ansible_env.USER }}
+  shell: usermod --shell /bin/zsh {{ ansible_env.USER }}
   become: true
   tags:
     - install
