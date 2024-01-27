@@ -9,4 +9,6 @@
       tags:
         - install
   tasks:
-    - include: tasks/git-setup.yml
+    - name: Fresh install
+      ansible.builtin.include_tasks:
+        file: tasks/git-setup.yml
