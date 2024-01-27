@@ -13,3 +13,4 @@
       ansible.builtin.include_tasks:
         file: tasks/git-setup.yml
         file: tasks/core-setup.yml
+        file: tasks/zsh-setup.yml
