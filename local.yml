@@ -9,8 +9,12 @@
       tags:
         - install
   tasks:
-    - name: Fresh install
+    - name: Git config
       ansible.builtin.include_tasks:
         file: tasks/git-setup.yml
+    - name: Core packages
+      ansible.builtin.include_tasks:
         file: tasks/core-setup.yml
+    - name: Zsh installation
+      ansible.builtin.include_tasks:
         file: tasks/zsh-setup.yml

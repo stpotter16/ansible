@@ -11,3 +11,10 @@
     name: ["curl", "htop"]
   tags:
     - install
+
+- name: Install man pages
+  become: true
+  apt:
+    name: ["manpages-posix", "manpages-dev", "man-db", "manpages-posix-dev"]
+  tags:
+    - install
