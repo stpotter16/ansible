@@ -1,0 +1,13 @@
+- name: Install System Packages (build-essential, cmake)
+  become: true
+  apt:
+    name: ["build-essential", "cmake"]
+  tags:
+    - install
+
+- name: Install System Packages
+  become: true
+  apt:
+    name: ["curl", "htop"]
+  tags:
+    - install
