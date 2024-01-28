@@ -5,6 +5,13 @@
   tags:
     - install
 
+- name: Install compiling tools (unzip, gettext)
+  become: true
+  apt:
+    name: ["unzip", "gettext"]
+  tags:
+    - install
+
 - name: Install System Packages
   become: true
   apt:

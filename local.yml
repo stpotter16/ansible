@@ -18,3 +18,6 @@
     - name: Zsh installation
       ansible.builtin.include_tasks:
         file: tasks/zsh-setup.yml
+    - name: Neovim installation
+      ansible.builtin.include_tasks:
+        file: tasks/neovim-setup.yml
