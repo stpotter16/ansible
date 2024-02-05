@@ -17,3 +17,6 @@ Ansible tools to bootstrap VMs for development
 - Install pyenv
 - Install go
 - Install rust
+
+# Fix
+- Creating a weird ' ' directory at some point
