@@ -1,3 +1,8 @@
+- name: Install stow
+  become: true
+  apt: name=stow
+  tags:
+    - install
 - name: Clone dotfiles
   ansible.builtin.git:
     repo: 'git@github.com:stpotter16/dotfiles.git'
