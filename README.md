@@ -11,3 +11,7 @@ Ansible tools to bootstrap VMs for development
 
 ## Run ansible
 `ansible-playbook local.yml`
+
+# TODO
+- Install npm for lsp stuff
+- Install pyenv
