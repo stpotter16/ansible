@@ -1,0 +1,6 @@
+- name: Clone dotfiles
+  ansible.builtin.git:
+    repo: 'git@github.com:stpotter16/dotfiles.git'
+    dest: "{{ lookup('env', 'HOME') }}/.dotfiles"
+  tags:
+    - install

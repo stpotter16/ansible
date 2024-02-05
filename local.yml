@@ -21,3 +21,6 @@
     - name: Neovim installation
       ansible.builtin.include_tasks:
         file: tasks/neovim-setup.yml
+    - name: Dotfiles installation
+      ansible.builtin.include_tasks:
+        file: tasks/dotfiles-setup.yml
