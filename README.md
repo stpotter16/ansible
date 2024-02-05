@@ -15,3 +15,5 @@ Ansible tools to bootstrap VMs for development
 # TODO
 - Install npm for lsp stuff
 - Install pyenv
+- Install go
+- Install rust
