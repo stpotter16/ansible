@@ -18,6 +18,7 @@ Ansible tools to bootstrap VMs for development
 - Install go
 - Install rust
 - Install shellcheck
+- More tags
 
 # Fix
 - Creating a weird ' ' directory at some point
