@@ -18,6 +18,7 @@ Ansible tools to bootstrap VMs for development
 - Install go
 - Install rust
 - Install shellcheck
+- Install fzf, fd, ripgrep, delta
 - More tags
 
 # Fix
