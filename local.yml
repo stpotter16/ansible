@@ -15,6 +15,9 @@
     - name: Core packages
       ansible.builtin.include_tasks:
         file: tasks/core-setup.yml
+    - name: Node installation
+      ansible.builtin.include_tasks:
+        file: tasks/node-setup.yml
     - name: Zsh installation
       ansible.builtin.include_tasks:
         file: tasks/zsh-setup.yml
