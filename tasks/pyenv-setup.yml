@@ -1,0 +1,12 @@
+- name: Clone pyenv
+  ansible.builtin.git:
+    repo: 'https://github.com/pyenv/pyenv.git'
+    dest: "{{ lookup('env', 'HOME') }}/.pyenv"
+  tags:
+    - install
+
+- name: Install Neovim
+  become: true
+  shell: "cd {{ lookup('env', 'HOME') }}/.pyenv && src/configure && make -C src"
+  tags:
+    -install

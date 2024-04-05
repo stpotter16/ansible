@@ -27,3 +27,6 @@
     - name: Dotfiles installation
       ansible.builtin.include_tasks:
         file: tasks/dotfiles-setup.yml
+    - name: Pyenv installation
+      ansible.builtin.include_tasks:
+        file: tasks/pyenv-setup.yml
