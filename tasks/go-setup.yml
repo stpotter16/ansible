@@ -11,7 +11,7 @@
 
 - name: Install Go
   become: true
-  shell: tar -C /usr/local -xzf /home/spotter/go1.22.2.linux-amd64.tar.gz && rm /home/spotter/go1.22.2.linux-amd64.tar.gz
+  shell: tar -C /usr/local -xzf /home/sampotter/go1.22.2.linux-amd64.tar.gz && rm /home/sampotter/go1.22.2.linux-amd64.tar.gz
   tags:
     - install
    
