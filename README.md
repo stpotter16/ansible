@@ -13,7 +13,6 @@ Ansible tools to bootstrap VMs for development
 `ansible-playbook local.yml`
 
 # TODO
-- Install go
 - Install rust
 - Install shellcheck
 - Install fzf, fd, ripgrep, delta, sqlite, make?

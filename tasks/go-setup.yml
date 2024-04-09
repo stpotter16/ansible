@@ -1,6 +1,17 @@
 - name: Download Go
-  shell: curl -L https://go.dev/dl/go1.22.2.linux-amd64.tar.gz > ~/.goinstaller && chmod +x ~/.goinstaller
+  shell: curl -L https://go.dev/dl/go1.22.2.linux-amd64.tar.gz > ~/go1.22.2.linux-amd64.tar.gz
+  tags:
+    - install
+
+- name: Remove old Go
+  become: true
+  shell: rm -rf /usr/local/go
   tags:
     - install
 
 - name: Install Go
+  become: true
+  shell: tar -C /usr/local -xzf /home/spotter/go1.22.2.linux-amd64.tar.gz && rm /home/spotter/go1.22.2.linux-amd64.tar.gz
+  tags:
+    - install
+   

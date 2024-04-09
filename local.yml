@@ -30,3 +30,6 @@
     - name: Pyenv installation
       ansible.builtin.include_tasks:
         file: tasks/pyenv-setup.yml
+    - name: Go installation
+      ansible.builtin.include_tasks:
+        file: tasks/go-setup.yml
