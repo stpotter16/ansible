@@ -16,7 +16,8 @@ Ansible tools to bootstrap VMs for development
 - Install go
 - Install rust
 - Install shellcheck
-- Install fzf, fd, ripgrep, delta
+- Install fzf, fd, ripgrep, delta, sqlite, make?
+- Fix zsh pyenv no such command
 - More tags
 
 # Fix

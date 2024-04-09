@@ -1,0 +1,6 @@
+- name: Download Go
+  shell: curl -L https://go.dev/dl/go1.22.2.linux-amd64.tar.gz > ~/.goinstaller && chmod +x ~/.goinstaller
+  tags:
+    - install
+
+- name: Install Go
