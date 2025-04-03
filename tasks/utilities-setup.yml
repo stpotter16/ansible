@@ -1,0 +1,6 @@
+- name: Install System Packages (build-essential, cmake)
+  become: true
+  apt:
+    name: ["build-essential", "cmake"]
+  tags:
+    - install
