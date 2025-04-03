@@ -1,0 +1,15 @@
+- name: Install sqlite
+  become: true
+  apt:
+    name: ["sqlite3"]
+  tags:
+    - install
+    - sqlite
+
+- name: Install sqlitebrowser
+  become: true
+  apt:
+    name: ["sqlitebrowser"]
+  tags:
+    - install
+    - sqlite

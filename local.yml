@@ -8,6 +8,9 @@
         state: present
       tags:
         - install
+        - utilities
+        - sqlite
+  
   tasks:
     - name: Git config
       ansible.builtin.include_tasks:
@@ -33,3 +36,13 @@
     - name: Go installation
       ansible.builtin.include_tasks:
         file: tasks/go-setup.yml
+    - name: Utility tools
+      ansible.builtin.include_tasks:
+        file: tasks/utilities-setup.yml
+      tags:
+          - utilities
+    - name: SQLite
+      ansible.builtin.include_tasks:
+        file: tasks/sqlite-install.yml
+      tags:
+          - sqlite

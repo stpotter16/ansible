@@ -13,10 +13,8 @@ Ansible tools to bootstrap VMs for development
 `ansible-playbook local.yml`
 
 # TODO
-- Install shellcheck
-- Install fzf, fd, ripgrep, delta, sqlite, make, tmux, sqlitebrowser, docker
-- Fix zsh pyenv no such command
-- More tags
+- Install sqlfluff
+- Install delta, docker
 
 # Fix
 - Creating a weird ' ' directory at some point

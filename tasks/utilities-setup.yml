@@ -1,6 +1,45 @@
-- name: Install System Packages (build-essential, cmake)
+- name: Install tmux
   become: true
   apt:
-    name: ["build-essential", "cmake"]
+    name: ["tmux"]
   tags:
     - install
+    - utilities
+
+- name: Install fzf
+  become: true
+  apt:
+    name: ["fzf"]
+  tags:
+    - install
+    - utilities
+
+- name: Install fd
+  become: true
+  apt:
+    name: ["fd-find"]
+  tags:
+    - install
+    - utilities
+
+- name: Link fd
+  shell: "mkdir -p ~/.local/bin && ln -sf $(which fdfind) ~/.local/bin/fd"
+  tags:
+    - install
+    - utilities
+
+- name: Install ripgrep
+  become: true
+  apt:
+    name: ["ripgrep"]
+  tags:
+    - install
+    - utilities
+
+- name: Install shellcheck
+  become: true
+  apt:
+    name: ["shellcheck"]
+  tags:
+    - install
+    - utilities
