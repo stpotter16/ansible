@@ -13,7 +13,6 @@ Ansible tools to bootstrap VMs for development
 `ansible-playbook local.yml`
 
 # TODO
-- Install rust
 - Install shellcheck
 - Install fzf, fd, ripgrep, delta, sqlite, make, tmux, sqlitebrowser, docker
 - Fix zsh pyenv no such command
