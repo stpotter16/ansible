@@ -14,7 +14,7 @@ Ansible tools to bootstrap VMs for development
 
 # TODO
 - Install sqlfluff
-- Install delta, docker
+- Install delta, 
 
 # Fix
 - Creating a weird ' ' directory at some point

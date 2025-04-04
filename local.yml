@@ -46,3 +46,8 @@
         file: tasks/sqlite-install.yml
       tags:
           - sqlite
+    - name: Docker
+      ansible.builtin.include_tasks:
+        file: tasks/docker-install.yml
+      tags:
+          - docker
