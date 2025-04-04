@@ -43,3 +43,11 @@
   tags:
     - install
     - utilities
+
+- name: Install lsof
+  become: true
+  apt:
+    name: ["lsof"]
+  tags:
+    - install
+    - utilities
