@@ -14,7 +14,9 @@ Ansible tools to bootstrap VMs for development
 
 # TODO
 - Install sqlfluff
+- Install n as the first step of installing node
 - Install delta, 
+- Install live-server as part of dev tooling
 
 # Fix
 - Creating a weird ' ' directory at some point
